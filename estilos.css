@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* Barra de navegacion */
+.navbar{
+    padding: 2rem;
+    background-color: #251B37;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: center;
+}
+.nav-link{
+    color: white;
+    margin-right: 50pt;
+}
+
+
+/* BOTONES */
+.collapse  i{
+    color:white;
+}
+
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+/*Dimenciones de pantalla*/
+@media (max-width: 340px) {
+	.navbar-collapse {
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  z-index: 1;
+	  width: 100%;
+	  background-color: white;
+	  padding: 0.5rem;
+	  border-radius: 0.25rem;
+	  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	}
+  }
+/*Animacion con los poster*/
+.paginacion button:hover {
+	background: #137c32;
+}
+.poster {
+	transition: opacity 0.3s ease-in-out; /* Agregamos una transición suave al cambio de opacidad */
+  }
+.poster.oscurecer {
+	opacity: 0.5; /* Agregamos el efecto de oscurecimiento */
+  }
