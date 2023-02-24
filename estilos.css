@@ -73,9 +73,9 @@ body {
 	justify-content: center;
 	gap: 20px;
 	padding: 10px;
-}
-
-.paginacion button {
+  }
+  
+  .paginacion button {
 	cursor: pointer;
 	border: none;
 	display: flex;
@@ -90,7 +90,19 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	transition: .3s ease all;
-}
+  }
+  
+  .paginacion p {
+	color: white;
+	font-size: 16px;
+	margin-top: 10px;
+	text-align: center;
+  }
+  
+  .paginacion p a {
+	text-decoration: none;
+	border-bottom: 1px solid white;
+  }
 /*Dimenciones de pantalla*/
 @media (max-width: 340px) {
 	.navbar-collapse {
@@ -115,3 +127,9 @@ body {
 .poster.oscurecer {
 	opacity: 0.5; /* Agregamos el efecto de oscurecimiento */
   }
+
+.estrellas{
+	color: gold;
+	border: black;
+	
+}
